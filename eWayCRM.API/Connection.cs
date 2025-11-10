@@ -442,9 +442,9 @@ namespace eWayCRM.API
         }
 
         /// <summary>
-        /// Calls method for uploading binary attachements against the eWay-CRM API.
+        /// Calls method for uploading binary attachments against the eWay-CRM API.
         /// </summary>
-        /// <param name="filePath">Path to the attachement to be uploaded (including the file). Is unnecessary if the method is supplied with stream and fileName. Ex. 'C:\Users\User\Documents\File.txt'</param>
+        /// <param name="filePath">Path to the attachment to be uploaded (including the file). Is unnecessary if the method is supplied with stream and fileName. Ex. 'C:\Users\User\Documents\File.txt'</param>
         /// <param name="itemGuid">The item unique identifier.  Will be generated for you.</param>
         /// <param name="fileName">Name of the file to be uploaded. Is unnecessary if the method is supplied with filePath. Ex. 'File.txt'</param>
         /// <returns>
@@ -463,10 +463,10 @@ namespace eWayCRM.API
         }
 
         /// <summary>
-        /// Calls method for uploading binary attachements against the eWay-CRM API.
+        /// Calls method for uploading binary attachments against the eWay-CRM API.
         /// </summary>
-        /// <param name="filePath">Path to the attachement to be uploaded (including the file). Is unnecessary if the method is supplied with stream and fileName. Ex. 'C:\Users\User\Documents\File.txt'</param>
-        /// <param name="itemGuid">Unique identifier  of attachement to be uploaded. Ex. 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX'</param>
+        /// <param name="filePath">Path to the attachment to be uploaded (including the file). Is unnecessary if the method is supplied with stream and fileName. Ex. 'C:\Users\User\Documents\File.txt'</param>
+        /// <param name="itemGuid">Unique identifier  of attachment to be uploaded. Ex. 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX'</param>
         /// <param name="fileName">Name of the file to be uploaded. Is unnecessary if the method is supplied with filePath. Ex. 'File.txt'</param>
         /// <returns>
         /// JSON data returned by the API service.
@@ -495,9 +495,9 @@ namespace eWayCRM.API
         }
 
         /// <summary>
-        /// Calls method for uploading binary attachements against the eWay-CRM API.
+        /// Calls method for uploading binary attachments against the eWay-CRM API.
         /// </summary>
-        /// <param name="stream">Stream used for uploading the attachement. File stream will be used if not supplied.. Ex.:'FileStream fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read)'</param>
+        /// <param name="stream">Stream used for uploading the attachment. File stream will be used if not supplied.. Ex.:'FileStream fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read)'</param>
         /// <param name="itemGuid">The item unique identifier.  Will be generated for you.</param>
         /// <param name="fileName">Name of the file to be uploaded. Ex. 'File.txt'</param>
         /// <returns>
@@ -519,10 +519,10 @@ namespace eWayCRM.API
         }
 
         /// <summary>
-        /// Calls method for uploading binary attachements against the eWay-CRM API.
+        /// Calls method for uploading binary attachments against the eWay-CRM API.
         /// </summary>
-        /// <param name="stream">Stream used for uploading the attachement. File stream will be used if not supplied.. Ex.:'FileStream fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read)'</param>
-        /// <param name="itemGuid">Unique identifier  of attachement to be uploaded. Ex. 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX'</param>
+        /// <param name="stream">Stream used for uploading the attachment. File stream will be used if not supplied.. Ex.:'FileStream fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read)'</param>
+        /// <param name="itemGuid">Unique identifier  of attachment to be uploaded. Ex. 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX'</param>
         /// <param name="fileName">Name of the file to be uploaded. Ex. 'File.txt'</param>
         /// <returns>
         /// JSON data returned by the API service.
