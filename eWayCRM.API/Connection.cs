@@ -180,7 +180,7 @@ namespace eWayCRM.API
         public JObject CallMethod(string methodName)
         {
             if (string.IsNullOrEmpty(methodName))
-                throw new ArgumentNullException("The method name was not supplied.", nameof(methodName));
+                throw new ArgumentNullException(nameof(methodName), "The method name was not supplied.");
 
             return this.CallMethod(methodName, JObject.FromObject(new { }));
         }
@@ -212,10 +212,10 @@ namespace eWayCRM.API
         public JObject CallMethod(string methodName, string jsonData)
         {
             if (string.IsNullOrEmpty(methodName))
-                throw new ArgumentNullException("The method name was not supplied.", nameof(methodName));
+                throw new ArgumentNullException(nameof(methodName), "The method name was not supplied.");
 
             if (string.IsNullOrEmpty(jsonData))
-                throw new ArgumentNullException("JSON data were not supplied.", nameof(jsonData));
+                throw new ArgumentNullException(nameof(jsonData), "JSON data were not supplied.");
 
             return this.CallMethod(methodName, JObject.Parse(jsonData));
         }
@@ -247,7 +247,7 @@ namespace eWayCRM.API
         public JObject CallMethod(string methodName, JObject data)
         {
             if (string.IsNullOrEmpty(methodName))
-                throw new ArgumentNullException("The method name was not supplied.", nameof(methodName));
+                throw new ArgumentNullException(nameof(methodName), "The method name was not supplied.");
 
             if (data == null)
                 throw new ArgumentNullException(nameof(data), "The parameter JSON data were not supplied. Supply at least an empty JSON object.");
